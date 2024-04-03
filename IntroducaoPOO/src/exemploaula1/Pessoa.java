@@ -1,4 +1,4 @@
-package anne;
+package exemploaula1;
 
 public class Pessoa {
 	public String primeiroNome;
