@@ -1,8 +1,11 @@
 package lista4.ex1;
 
+import java.util.ArrayList;
+
 public class MainVeiculo {
 
 	public static void main(String[] args) {
+		
 
 		Veiculo fusca = new Veiculo();		
 		fusca.setNome("Fusca");
@@ -24,6 +27,20 @@ public class MainVeiculo {
 		moto.setNumRodas(2);
 		moto.setFabricante("Honda");
 		moto.setCor("Prata");
+		
+		ArrayList<Veiculo> veiculos = new ArrayList<>();
+		veiculos.add(fusca);
+		veiculos.add(van);
+		veiculos.add(moto);
+		
+		for(Veiculo veiculo : veiculos) {
+			System.out.println(veiculo.getNome());
+			System.out.println(veiculo.getAno());
+			System.out.println("Numero de Rodas: " + veiculo.getNumRodas());
+			System.out.println(veiculo.getFabricante());
+			System.out.println(veiculo.getCor());
+			System.out.println("");
+		}
 	}
 
 }
